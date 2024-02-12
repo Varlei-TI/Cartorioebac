@@ -121,7 +121,6 @@ int main ()
 	int laco=1;
 	for(laco=1; laco=1;)
 
-
 	{
 		system("cls");//Responsável por limpar a tela
 		
@@ -131,7 +130,8 @@ int main ()
 		printf("\t1 Registrar nomes: \n\n");
 		printf("\t2 Consultar nomes: \n\n");
 		printf("\t3 Deletar nomes: \n\n");
-		printf("Opção:");//Fim do menu
+		printf("\t4 Sair do sistema!\n\n");
+		printf("Opção: ");//Fim do menu
 		
 		scanf("%d", &opcao);//Armazenando a escolha do usuario
 		
@@ -152,13 +152,17 @@ int main ()
 			deletar();//Chamada das funções
 			break;
 			
+			case 4:
+			printf("Obrigado por usar o sistema!\n");
+			return 0;
+			break;
+			
 			default:
 			printf("Essa opção não esta disponível!\n");//Resposta da opção escolhida
 			system("pause");//Responsável por pausar o programa
 			break;
 		}
 	}
-
 }	
 
 
